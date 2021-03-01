@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}
+	</style>
+	<title>Graalvm Vs Jvm Performance</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Blog"
+  },
+  "headline": "Graalvm Vs Jvm Performance",
+  "datePublished": "2021-03-01",
+  "image": "https://technology.amis.nl/wp-content/uploads/2018/11/jvm-memory.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog Wallpaper",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=graalvm+vs+jvm+performance",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Blog Wallpaper" class="navbar-brand mb-1">Blog Wallpaper</a>
+			  			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+						<script type='text/javascript' src='//pl16106939.gatetotrustednetwork.com/c5/cc/4a/c5cc4aa1235b9046f17fa8c20b7c1115.js'></script>
+<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '14141033094306fdfffd4f6613bdfaee',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/14141033094306fdfffd4f6613bdfaee/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<h1>Graalvm Vs Jvm Performance</h1>
+<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4e3d2f6a6fa732eb63e999eb159edcc5',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/4e3d2f6a6fa732eb63e999eb159edcc5/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4e3d2f6a6fa732eb63e999eb159edcc5',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/4e3d2f6a6fa732eb63e999eb159edcc5/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<div class="navi text-center">
+										<a class="badge badge-warning" href="/gold-coast-2018-rtm.html">gold coast 2018 rtm</a>
+											<a class="badge badge-danger" href="/go-kl-blue-line.html">go kl blue line</a>
+											<a class="badge badge-info" href="/goblin-korean-drama-cast.html">goblin korean drama cast</a>
+											<a class="badge badge-light" href="/global-peace-mission-malaysia.html">global peace mission malaysia</a>
+											<a class="badge badge-dark" href="/go-kart-kuala-lumpur.html">go kart kuala lumpur</a>
+											<a class="badge badge-light" href="/goku-turning-super-saiyan.html">goku turning super saiyan</a>
+											<a class="badge badge-info" href="/gleason-spiral-bevel-gear.html">gleason spiral bevel gear</a>
+											<a class="badge badge-light" href="/global-rail-sdn-bhd.html">global rail sdn bhd</a>
+						</div>
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+	</center>
+</div>					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.graalvm.org/resources/img/ms_startup_time.png" data-lightbox="roadtrip" data-title="Why Graalvm">
+											<img class="card-img v-image" src="https://www.graalvm.org/resources/img/ms_startup_time.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnja8tpCU4fKYYmD3jL8HiJYTGgm_O7UvIMw';" alt="Why Graalvm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Why Graalvm</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://res.infoq.com/presentations/graalvm-performance/en/slides/sl10-1563815377805.jpg" data-lightbox="roadtrip" data-title="Maximizing Performance With Graalvm">
+											<img class="card-img v-image" src="https://res.infoq.com/presentations/graalvm-performance/en/slides/sl10-1563815377805.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxM3MuTmzuCDFdAXPaGe65WciC0JHXaNCvJQ';" alt="Maximizing Performance With Graalvm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Maximizing Performance With Graalvm</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://res.infoq.com/presentations/graalvm-performance/en/slides/sl19-1563815382068.jpg" data-lightbox="roadtrip" data-title="Maximizing Performance With Graalvm">
+											<img class="card-img v-image" src="https://res.infoq.com/presentations/graalvm-performance/en/slides/sl19-1563815382068.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFzqCLO_MoVjW2Jnu3hMkXAHkYOPc8MhlwVw';" alt="Maximizing Performance With Graalvm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Maximizing Performance With Graalvm</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/3078/1*rHZFwj8uu-x8KVCItuu53Q.png" data-lightbox="roadtrip" data-title="Compiling Scala Faster With Graalvm By Vojin Jovanovic Graalvm Medium">
+											<img class="card-img v-image" src="https://miro.medium.com/max/3078/1*rHZFwj8uu-x8KVCItuu53Q.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqaBJjiAoSVkm_6gPX2KHXfEA7A1EXa59Efg';" alt="Compiling Scala Faster With Graalvm By Vojin Jovanovic Graalvm Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Compiling Scala Faster With Graalvm By Vojin Jovanovic Graalvm Medium</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/1622/1*a58gjWrrHdMGeA8LStUKBQ.png" data-lightbox="roadtrip" data-title="Better Java Streams Performance With Graalvm By Aleksandar Prokopec Graalvm Medium">
+											<img class="card-img v-image" src="https://miro.medium.com/max/1622/1*a58gjWrrHdMGeA8LStUKBQ.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8wkS6HLOb3aWN38fgSSaKD1QQkw1A7MFDA';" alt="Better Java Streams Performance With Graalvm By Aleksandar Prokopec Graalvm Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Better Java Streams Performance With Graalvm By Aleksandar Prokopec Graalvm Medium</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://camo.githubusercontent.com/4c2e5ac394196ee952d4660736498f8a4ccead8b3d5fff96368c5573db6713ef/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a3331304e4a43796c30514636615044624278736242412e706e67" data-lightbox="roadtrip" data-title="Github Ashverism Graalvm A Brief Article About Graalvm And Polyglot Programming">
+											<img class="card-img v-image" src="https://camo.githubusercontent.com/4c2e5ac394196ee952d4660736498f8a4ccead8b3d5fff96368c5573db6713ef/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a3331304e4a43796c30514636615044624278736242412e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1OEvGVDJXEu1OPpCKksqS4E6CD_LWe0qbg';" alt="Github Ashverism Graalvm A Brief Article About Graalvm And Polyglot Programming">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Github Ashverism Graalvm A Brief Article About Graalvm And Polyglot Programming</h3>
+				</div>
+			</div>
+		</div>
+			 
+					<div class="col-12 mb-4">
+				<div class="card">
+										<img class="card-img-top v-cover" src="http://macias.info/static/assets/2019/graal_aot/exec_time.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH1OEvGVDJXEu1OPpCKksqS4E6CD_LWe0qbg';" alt="Github Ashverism Graalvm A Brief Article About Graalvm And Polyglot Programming">
+										<div class="card-body">
+						<h3 class="h5"><b></b></h3>
+											</div> 
+				</div>
+			</div>
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://technology.amis.nl/wp-content/uploads/2018/12/measures-2-start-times.png" data-lightbox="roadtrip" data-title="Jvm Performance Openj9 Uses Least Memory Graalvm Most Openjdk Distributions Differ">
+											<img class="card-img v-image" src="https://technology.amis.nl/wp-content/uploads/2018/12/measures-2-start-times.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVNlnthuSbykfcFK2r3UmAY5joAzgx0AoxZQ';" alt="Jvm Performance Openj9 Uses Least Memory Graalvm Most Openjdk Distributions Differ">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Jvm Performance Openj9 Uses Least Memory Graalvm Most Openjdk Distributions Differ</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://alvinalexander.com/sites/default/files/inline-images/file-find-performance-2.jpg" data-lightbox="roadtrip" data-title="Graalvm Native Executables Can Run Faster Than Scala Java Jvm Applications With Much Less Memory Consumption Alvinalexander Com">
+											<img class="card-img v-image" src="https://alvinalexander.com/sites/default/files/inline-images/file-find-performance-2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1tUYZEacfg0Da2cAHlWxNRIrNaby5ZQyJxQ';" alt="Graalvm Native Executables Can Run Faster Than Scala Java Jvm Applications With Much Less Memory Consumption Alvinalexander Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Graalvm Native Executables Can Run Faster Than Scala Java Jvm Applications With Much Less Memory Consumption Alvinalexander Com</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/700/1*K5EWVfN_zP1m_COgXwkYaw.png" data-lightbox="roadtrip" data-title="Native Javac Built With Graalvm Benchmarking The Effect Of A Native By John Freeman Medium">
+											<img class="card-img v-image" src="https://miro.medium.com/max/700/1*K5EWVfN_zP1m_COgXwkYaw.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKn0Yv5KocFMvzv4qMzNGky6YYlB9rzpKtuw';" alt="Native Javac Built With Graalvm Benchmarking The Effect Of A Native By John Freeman Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Native Javac Built With Graalvm Benchmarking The Effect Of A Native By John Freeman Medium</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://technology.amis.nl/wp-content/uploads/2018/11/jvm-memory.png" data-lightbox="roadtrip" data-title="Comparing Jvm Performance Zulu Openjdk Openjdk Oracle Jdk Graalvm Ce">
+											<img class="card-img v-image" src="https://technology.amis.nl/wp-content/uploads/2018/11/jvm-memory.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYUzwyvHWNL3BeyHuzOKYVdid5kopike-8Mw';" alt="Comparing Jvm Performance Zulu Openjdk Openjdk Oracle Jdk Graalvm Ce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Comparing Jvm Performance Zulu Openjdk Openjdk Oracle Jdk Graalvm Ce</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://res.infoq.com/presentations/graalvm-performance/en/slides/sl13-1563815380892.jpg" data-lightbox="roadtrip" data-title="Maximizing Performance With Graalvm">
+											<img class="card-img v-image" src="https://res.infoq.com/presentations/graalvm-performance/en/slides/sl13-1563815380892.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxykx2fsNa0ARIV3KxU8B9w-mLR3eln35yUg';" alt="Maximizing Performance With Graalvm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Maximizing Performance With Graalvm</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://jaxenter.com/wp-content/uploads/2019/07/1_X3oWDHQESJpYzMjho0mC8g.png" data-lightbox="roadtrip" data-title="Graalvm Version 19 1 Speeds Up Compilation Lowers Execution Time Jaxenter">
+											<img class="card-img v-image" src="https://jaxenter.com/wp-content/uploads/2019/07/1_X3oWDHQESJpYzMjho0mC8g.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBj3tIemNs7huNCyMq-OxCbRwm2fuWvb26Sw';" alt="Graalvm Version 19 1 Speeds Up Compilation Lowers Execution Time Jaxenter">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Graalvm Version 19 1 Speeds Up Compilation Lowers Execution Time Jaxenter</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://technology.amis.nl/wp-content/uploads/2018/11/performance.png" data-lightbox="roadtrip" data-title="Comparing Jvm Performance Zulu Openjdk Openjdk Oracle Jdk Graalvm Ce">
+											<img class="card-img v-image" src="https://technology.amis.nl/wp-content/uploads/2018/11/performance.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf2l69Nq1UPSZeZDSCcwrOUlwhTya93ZLhug';" alt="Comparing Jvm Performance Zulu Openjdk Openjdk Oracle Jdk Graalvm Ce">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Comparing Jvm Performance Zulu Openjdk Openjdk Oracle Jdk Graalvm Ce</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://hackernoon.com/hn-images/1*mG2EvxLK13IY4_AoT9B2Ww.png" data-lightbox="roadtrip" data-title="Why The Java Community Should Embrace Graalvm Hacker Noon">
+											<img class="card-img v-image" src="https://hackernoon.com/hn-images/1*mG2EvxLK13IY4_AoT9B2Ww.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtF7dZNDzpmBLY4fivQbOcrIuLAs8Yz8MEKQ';" alt="Why The Java Community Should Embrace Graalvm Hacker Noon">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Why The Java Community Should Embrace Graalvm Hacker Noon</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.phoronix.net/image.php?id=openjdk-corretto-graalvm&amp;image=jvm_compare_1" data-lightbox="roadtrip" data-title="Openjdk 8 11 Vs Graalvm 20 Vs Amazon Corretto Jvm Benchmarks Phoronix">
+											<img class="card-img v-image" src="https://www.phoronix.net/image.php?id=openjdk-corretto-graalvm&amp;image=jvm_compare_1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZhCiMuQ2_0K850S1MU2azbLLFogOYwu2Ug';" alt="Openjdk 8 11 Vs Graalvm 20 Vs Amazon Corretto Jvm Benchmarks Phoronix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Openjdk 8 11 Vs Graalvm 20 Vs Amazon Corretto Jvm Benchmarks Phoronix</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://macias.info/static/assets/2019/graal_aot/exec_time.png" data-lightbox="roadtrip" data-title="Java Jit Vs Java Aot Vs Go For Small Short Lived Processes Mario Macias Handcrafted Blog">
+											<img class="card-img v-image" src="http://macias.info/static/assets/2019/graal_aot/exec_time.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCgHGg1TSJ8ROlBo7FdaJR1hM-QmbjNLd0jg';" alt="Java Jit Vs Java Aot Vs Go For Small Short Lived Processes Mario Macias Handcrafted Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Java Jit Vs Java Aot Vs Go For Small Short Lived Processes Mario Macias Handcrafted Blog</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/2438/1*gu6FTuPU5VUk06oHR3AJhQ.jpeg" data-lightbox="roadtrip" data-title="Graalvm S Javascript Engine On Jdk11 With High Performance By Christian Wirth Graalvm Medium">
+											<img class="card-img v-image" src="https://miro.medium.com/max/2438/1*gu6FTuPU5VUk06oHR3AJhQ.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM8LCu3Zc58UTe8kWZI8vbaqpr_-6TXUL9nw';" alt="Graalvm S Javascript Engine On Jdk11 With High Performance By Christian Wirth Graalvm Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Graalvm S Javascript Engine On Jdk11 With High Performance By Christian Wirth Graalvm Medium</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://4.bp.blogspot.com/-EPEAvKx4vXw/XIQnSfkG3JI/AAAAAAAAMpg/zX12RzbeNk4m6jwI_1LAMT0QJuBphIhegCLcBGAs/s1600/graalvm-netty.png" data-lightbox="roadtrip" data-title="Polyglot And Native Runtime With Graalvm">
+											<img class="card-img v-image" src="https://4.bp.blogspot.com/-EPEAvKx4vXw/XIQnSfkG3JI/AAAAAAAAMpg/zX12RzbeNk4m6jwI_1LAMT0QJuBphIhegCLcBGAs/s1600/graalvm-netty.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYsz79NuHQcOFNG9FH8SBLU3cbC068jWoWNw';" alt="Polyglot And Native Runtime With Graalvm">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Polyglot And Native Runtime With Graalvm</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://pbs.twimg.com/media/Db4tEq7U0AANvSz.jpg" data-lightbox="roadtrip" data-title="Why Is Graalvm So Fast Beginners Clojureverse">
+											<img class="card-img v-image" src="https://pbs.twimg.com/media/Db4tEq7U0AANvSz.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTCVnSUlp3Z8hJt3kaDnJlwUdvqvPAszaw1g';" alt="Why Is Graalvm So Fast Beginners Clojureverse">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Why Is Graalvm So Fast Beginners Clojureverse</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://res.cloudinary.com/practicaldev/image/fetch/s--bSZElg4B--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/j9gm0ll7vjt7eeafaew2.jpg" data-lightbox="roadtrip" data-title="Graalvm Polyglot Virtual Machine Dev Community">
+											<img class="card-img v-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--bSZElg4B--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/j9gm0ll7vjt7eeafaew2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_GBIxbXj37OeMCR9sj3ZQIEAsOflt4ZW9hQ';" alt="Graalvm Polyglot Virtual Machine Dev Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Graalvm Polyglot Virtual Machine Dev Community</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+		</div>
+				<div class="clearfix"></div> 
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/food-magazine-name-ideas.html">Food Magazine Name Ideas</a></li>
+													<li class="list-group-item"><a href="/foley-catheter-insertion-procedure.html">Foley Catheter Insertion Procedure</a></li>
+													<li class="list-group-item"><a href="/foh-meaning-urban-dictionary.html">Foh Meaning Urban Dictionary</a></li>
+													<li class="list-group-item"><a href="/focus-dynamics-group-berhad.html">Focus Dynamics Group Berhad</a></li>
+													<li class="list-group-item"><a href="/fonts-for-game-name.html">Fonts For Game Name</a></li>
+													<li class="list-group-item"><a href="/food-panda-kerja-kosong.html">Food Panda Kerja Kosong</a></li>
+													<li class="list-group-item"><a href="/ford-f150-cab-styles.html">Ford F150 Cab Styles</a></li>
+													<li class="list-group-item"><a href="/ford-ranger-raptor-2020.html">Ford Ranger Raptor 2020</a></li>
+													<li class="list-group-item"><a href="/food-truck-malaysia-price.html">Food Truck Malaysia Price</a></li>
+													<li class="list-group-item"><a href="/folic-acid-untuk-lelaki.html">Folic Acid Untuk Lelaki</a></li>
+													<li class="list-group-item"><a href="/food-poisoning-research-paper.html">Food Poisoning Research Paper</a></li>
+													<li class="list-group-item"><a href="/football-republic-sunway-pyramid.html">Football Republic Sunway Pyramid</a></li>
+													<li class="list-group-item"><a href="/for-your-attention-meaning.html">For Your Attention Meaning</a></li>
+													<li class="list-group-item"><a href="/follow-the-path-synonym.html">Follow The Path Synonym</a></li>
+													<li class="list-group-item"><a href="/food-at-sunway-velocity.html">Food At Sunway Velocity</a></li>
+													<li class="list-group-item"><a href="/food-panda-seri-iskandar.html">Food Panda Seri Iskandar</a></li>
+													<li class="list-group-item"><a href="/ford-kuga-4x4-problems.html">Ford Kuga 4x4 Problems</a></li>
+													<li class="list-group-item"><a href="/fontana-gardens-hong-kong.html">Fontana Gardens Hong Kong</a></li>
+													<li class="list-group-item"><a href="/focus-frame-size-guide.html">Focus Frame Size Guide</a></li>
+													<li class="list-group-item"><a href="/footnote-example-harvard-style.html">Footnote Example Harvard Style</a></li>
+						 
+						</ul>
+					</div>
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '4018db45540318875131c0e1da041568',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://plqbxvnjxq92.com/4018db45540318875131c0e1da041568/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+	
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	</body>
+</html>

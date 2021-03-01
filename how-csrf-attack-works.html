@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}
+	</style>
+	<title>How Csrf Attack Works</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Blog"
+  },
+  "headline": "How Csrf Attack Works",
+  "datePublished": "2021-03-01",
+  "image": "https://s3.amazonaws.com/com.twilio.prod.twilio-docs/original_images/el0otNMnu_Py7VYSUmd3KfC2f58jVjIAX24ff6e8DnY2qrh3Jw9pKYyGN4qQIIg2Dnl39evUcD.png",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog Wallpaper",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=how+csrf+attack+works",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Blog Wallpaper" class="navbar-brand mb-1">Blog Wallpaper</a>
+			  			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+						<script type='text/javascript' src='//pl16106939.gatetotrustednetwork.com/c5/cc/4a/c5cc4aa1235b9046f17fa8c20b7c1115.js'></script>
+<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '14141033094306fdfffd4f6613bdfaee',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/14141033094306fdfffd4f6613bdfaee/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<h1>How Csrf Attack Works</h1>
+<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4e3d2f6a6fa732eb63e999eb159edcc5',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/4e3d2f6a6fa732eb63e999eb159edcc5/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4e3d2f6a6fa732eb63e999eb159edcc5',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/4e3d2f6a6fa732eb63e999eb159edcc5/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<div class="navi text-center">
+										<a class="badge badge-dark" href="/harga-first-aid-kit.html">harga first aid kit</a>
+											<a class="badge badge-danger" href="/harga-honda-dash-2020.html">harga honda dash 2020</a>
+											<a class="badge badge-secondary" href="/harga-enjin-kelisa-jepun.html">harga enjin kelisa jepun</a>
+											<a class="badge badge-dark" href="/harga-emas-ar-rahnu.html">harga emas ar rahnu</a>
+											<a class="badge badge-dark" href="/harga-honda-dash-125.html">harga honda dash 125</a>
+											<a class="badge badge-danger" href="/harga-ford-ranger-terpakai.html">harga ford ranger terpakai</a>
+											<a class="badge badge-success" href="/harga-gas-masak-2020.html">harga gas masak 2020</a>
+											<a class="badge badge-dark" href="/harga-hp-realme-malaysia.html">harga hp realme malaysia</a>
+						</div>
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+	</center>
+</div>					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.imperva.com/learn/wp-content/uploads/sites/13/2019/01/csrf-cross-site-request-forgery.png" data-lightbox="roadtrip" data-title="What Is Csrf Cross Site Request Forgery Example Imperva">
+											<img class="card-img v-image" src="https://www.imperva.com/learn/wp-content/uploads/sites/13/2019/01/csrf-cross-site-request-forgery.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPN_eoP0RyULE7_tlAonHh-Sb2UwiRW-OA3w';" alt="What Is Csrf Cross Site Request Forgery Example Imperva">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">What Is Csrf Cross Site Request Forgery Example Imperva</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://blog.pusher.com/wp-content/uploads/2018/04/csrf-attack-diagram-1024x596.png" data-lightbox="roadtrip" data-title="Csrf In Laravel How Verifycsrftoken Works And How To Prevent Attacks Blog Pusher">
+											<img class="card-img v-image" src="https://blog.pusher.com/wp-content/uploads/2018/04/csrf-attack-diagram-1024x596.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNj7HRoAdk7Snkm20FmdYr6uvvp-dmNOaRiQ';" alt="Csrf In Laravel How Verifycsrftoken Works And How To Prevent Attacks Blog Pusher">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Csrf In Laravel How Verifycsrftoken Works And How To Prevent Attacks Blog Pusher</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/736/1*_DGU1bpdqTMKtTNyBc_wRw.png" data-lightbox="roadtrip" data-title="Csrf A Sleeping Giant In The World Of Web Security By Ashif Mohamed Medium">
+											<img class="card-img v-image" src="https://miro.medium.com/max/736/1*_DGU1bpdqTMKtTNyBc_wRw.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo4xKAgsWJEo1DQJYyLM4XBsDyMXhjlmkS0A';" alt="Csrf A Sleeping Giant In The World Of Web Security By Ashif Mohamed Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Csrf A Sleeping Giant In The World Of Web Security By Ashif Mohamed Medium</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://s3.amazonaws.com/com.twilio.prod.twilio-docs/original_images/el0otNMnu_Py7VYSUmd3KfC2f58jVjIAX24ff6e8DnY2qrh3Jw9pKYyGN4qQIIg2Dnl39evUcD.png" data-lightbox="roadtrip" data-title="Going Surfing Protect Your Node Js App From Cross Site Request Forgery Twilio">
+											<img class="card-img v-image" src="https://s3.amazonaws.com/com.twilio.prod.twilio-docs/original_images/el0otNMnu_Py7VYSUmd3KfC2f58jVjIAX24ff6e8DnY2qrh3Jw9pKYyGN4qQIIg2Dnl39evUcD.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXjAYNAYWcQhQcjzecok_29eqnaFFZYpbniQ';" alt="Going Surfing Protect Your Node Js App From Cross Site Request Forgery Twilio">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Going Surfing Protect Your Node Js App From Cross Site Request Forgery Twilio</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/2814/1*g_ISMQPCQpjw-6w3JRFUKQ.png" data-lightbox="roadtrip" data-title="Cracking Java S Rng For Csrf Javax Faces And Why Csrf Token By Rick Ramgattie Independent Security Evaluators">
+											<img class="card-img v-image" src="https://miro.medium.com/max/2814/1*g_ISMQPCQpjw-6w3JRFUKQ.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ9knenOVigF4vE23RMkZhvRJceYXONRpsTA';" alt="Cracking Java S Rng For Csrf Javax Faces And Why Csrf Token By Rick Ramgattie Independent Security Evaluators">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Cracking Java S Rng For Csrf Javax Faces And Why Csrf Token By Rick Ramgattie Independent Security Evaluators</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.acunetix.com/wp-content/uploads/2013/04/csrf.png" data-lightbox="roadtrip" data-title="Csrf Attacks Anatomy Prevention And Xsrf Tokens Acunetix">
+											<img class="card-img v-image" src="https://www.acunetix.com/wp-content/uploads/2013/04/csrf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPuqXzeed4SH6KkziVOYRn25NPf-8qPhx8Vg';" alt="Csrf Attacks Anatomy Prevention And Xsrf Tokens Acunetix">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Csrf Attacks Anatomy Prevention And Xsrf Tokens Acunetix</h3>
+				</div>
+			</div>
+		</div>
+			 
+					<div class="col-12 mb-4">
+				<div class="card">
+										<img class="card-img-top v-cover" src="https://devnet.kentico.com/getattachment/Articles/2015-03/Protection-against-Cross-site-request-forgery-(CSR/CSRF_UX_general_Flip.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPuqXzeed4SH6KkziVOYRn25NPf-8qPhx8Vg';" alt="Csrf Attacks Anatomy Prevention And Xsrf Tokens Acunetix">
+										<div class="card-body">
+						<h3 class="h5"><b></b></h3>
+											</div> 
+				</div>
+			</div>
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.cloudflare.com/img/learning/security/threats/cross-site-request-forgery/forged-request.png" data-lightbox="roadtrip" data-title="What Is Cross Site Request Forgery Cloudflare">
+											<img class="card-img v-image" src="https://www.cloudflare.com/img/learning/security/threats/cross-site-request-forgery/forged-request.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSK6czhkjtNloBeNRj_j_Iyy26Y04duBgUhw';" alt="What Is Cross Site Request Forgery Cloudflare">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">What Is Cross Site Request Forgery Cloudflare</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.netsparker.com/statics/img/webo/same-site-cookie-diagram-1.png" data-lightbox="roadtrip" data-title="Preventing Csrf Attacks With The Samesite Cookie Attribute Netsparker">
+											<img class="card-img v-image" src="https://www.netsparker.com/statics/img/webo/same-site-cookie-diagram-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbjfydPORc-YZSh_mebqqoox7FwdQbSyT5Jg';" alt="Preventing Csrf Attacks With The Samesite Cookie Attribute Netsparker">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Preventing Csrf Attacks With The Samesite Cookie Attribute Netsparker</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://devnet.kentico.com/getattachment/Articles/2015-03/Protection-against-Cross-site-request-forgery-(CSR/CSRF_UX.png" data-lightbox="roadtrip" data-title="Protection Against Cross Site Request Forgery Csrf Xsrf">
+											<img class="card-img v-image" src="https://devnet.kentico.com/getattachment/Articles/2015-03/Protection-against-Cross-site-request-forgery-(CSR/CSRF_UX.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCtfsDOaFz1K3M8Dgc1vM56as9LEhH9gem1Q';" alt="Protection Against Cross Site Request Forgery Csrf Xsrf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Protection Against Cross Site Request Forgery Csrf Xsrf</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://portswigger.net/web-security/images/cross-site%20request%20forgery.svg" data-lightbox="roadtrip" data-title="What Is Csrf Cross Site Request Forgery Tutorial Examples Web Security Academy">
+											<img class="card-img v-image" src="https://portswigger.net/web-security/images/cross-site%20request%20forgery.svg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhHAe8mVa_7OuUXsfzN69V4wlojX1AVRXLw';" alt="What Is Csrf Cross Site Request Forgery Tutorial Examples Web Security Academy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">What Is Csrf Cross Site Request Forgery Tutorial Examples Web Security Academy</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.thesecuritybuddy.com/wordpress/bdr/uploads/2020/01/CSRFAttack_20.jpg" data-lightbox="roadtrip" data-title="What Is Csrf Or Cross Site Request Forgery Attack The Security Buddy">
+											<img class="card-img v-image" src="https://www.thesecuritybuddy.com/wordpress/bdr/uploads/2020/01/CSRFAttack_20.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr1yG-BluP3QEZD9MZ1PINNG4eiQ4X6k2NHw';" alt="What Is Csrf Or Cross Site Request Forgery Attack The Security Buddy">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">What Is Csrf Or Cross Site Request Forgery Attack The Security Buddy</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://docs.kilvn.com/build-web-application-with-golang/en/images/9.1.csrf.png?raw=true" data-lightbox="roadtrip" data-title="">
+											<img class="card-img v-image" src="https://docs.kilvn.com/build-web-application-with-golang/en/images/9.1.csrf.png?raw=true" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx2-b55cj74-4oFS8xTDE03jr-Vraf1_oNMA';" alt="">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6"></h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.whitehatsec.com/wp-content/uploads/csrf.png" data-lightbox="roadtrip" data-title="Csrf Prevention In Java Whitehat Security">
+											<img class="card-img v-image" src="https://www.whitehatsec.com/wp-content/uploads/csrf.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGV-oyFc1smvy1e0QdWFWKLDKNgr29lB9EMQ';" alt="Csrf Prevention In Java Whitehat Security">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Csrf Prevention In Java Whitehat Security</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/1058/1*2GSpGh9BOvFdLB1-DlN8QQ.jpeg" data-lightbox="roadtrip" data-title="Cross Site Request Forgery Csrf By Asfiya Ha Kh Medium">
+											<img class="card-img v-image" src="https://miro.medium.com/max/1058/1*2GSpGh9BOvFdLB1-DlN8QQ.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDidgq7z3B84triwQzV0tJW4mAAyC9u5iIrQ';" alt="Cross Site Request Forgery Csrf By Asfiya Ha Kh Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Cross Site Request Forgery Csrf By Asfiya Ha Kh Medium</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.neuralegion.com/wp-content/uploads/2019/12/csrf-1024x576.png" data-lightbox="roadtrip" data-title="What Is A Cross Site Request Forgery Csrf Attack">
+											<img class="card-img v-image" src="https://www.neuralegion.com/wp-content/uploads/2019/12/csrf-1024x576.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTtHTfGf1BnaGu_TPaJYmexQtn-DnnsX7xOw';" alt="What Is A Cross Site Request Forgery Csrf Attack">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">What Is A Cross Site Request Forgery Csrf Attack</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://devnet.kentico.com/getattachment/Articles/2015-03/Protection-against-Cross-site-request-forgery-(CSR/CSRF_UX_general_Flip.png" data-lightbox="roadtrip" data-title="Protection Against Cross Site Request Forgery Csrf Xsrf">
+											<img class="card-img v-image" src="https://devnet.kentico.com/getattachment/Articles/2015-03/Protection-against-Cross-site-request-forgery-(CSR/CSRF_UX_general_Flip.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVJgnN8rh4OZB3LEQUAF90A2c5QdV4oOwukg';" alt="Protection Against Cross Site Request Forgery Csrf Xsrf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Protection Against Cross Site Request Forgery Csrf Xsrf</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://rusyasoft.github.io/assets/images/springSecurity/HowTheCSRFPerformed.jpg" data-lightbox="roadtrip" data-title="How To Get Csrf For Current Session Welcome To Rustam S Blog">
+											<img class="card-img v-image" src="https://rusyasoft.github.io/assets/images/springSecurity/HowTheCSRFPerformed.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQc2khQ9SZKPKblXyFry6X7u4uvEplPcJmA';" alt="How To Get Csrf For Current Session Welcome To Rustam S Blog">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">How To Get Csrf For Current Session Welcome To Rustam S Blog</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.stack.imgur.com/UDaN0.png" data-lightbox="roadtrip" data-title="Understanding Csrf Attack Prevention Information Security Stack Exchange">
+											<img class="card-img v-image" src="https://i.stack.imgur.com/UDaN0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvNR2eAYVd3Zo62-VRL7gbYO8zusytcdME2Q';" alt="Understanding Csrf Attack Prevention Information Security Stack Exchange">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Understanding Csrf Attack Prevention Information Security Stack Exchange</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://miro.medium.com/max/3856/1*s4a0TKK8uyY1fggCVnAz-w.png" data-lightbox="roadtrip" data-title="Csrf Cross Site Request Forgery Attack And Ways To Combat It In Rails By Danny Tseng The Startup Medium">
+											<img class="card-img v-image" src="https://miro.medium.com/max/3856/1*s4a0TKK8uyY1fggCVnAz-w.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSprKreM_8tt0sIQN-ke8CNZEscY8gwgeGxzg';" alt="Csrf Cross Site Request Forgery Attack And Ways To Combat It In Rails By Danny Tseng The Startup Medium">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Csrf Cross Site Request Forgery Attack And Ways To Combat It In Rails By Danny Tseng The Startup Medium</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://res.cloudinary.com/practicaldev/image/fetch/s--9I4xGaKf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://spanning.com/wp-content/uploads/2019/04/cross-site-request-forgery-example.png" data-lightbox="roadtrip" data-title="I Never Sent That An Intro To Csrf Updated Dev Community">
+											<img class="card-img v-image" src="https://res.cloudinary.com/practicaldev/image/fetch/s--9I4xGaKf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://spanning.com/wp-content/uploads/2019/04/cross-site-request-forgery-example.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVGHwzfu_-yAnqBVBLfR5th_nMZbxwPxYU9A';" alt="I Never Sent That An Intro To Csrf Updated Dev Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">I Never Sent That An Intro To Csrf Updated Dev Community</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+		</div>
+				<div class="clearfix"></div> 
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/genting-fox-theme-park.html">Genting Fox Theme Park</a></li>
+													<li class="list-group-item"><a href="/genting-historical-share-price.html">Genting Historical Share Price</a></li>
+													<li class="list-group-item"><a href="/gerai-limau-bali-tambun.html">Gerai Limau Bali Tambun</a></li>
+													<li class="list-group-item"><a href="/genesis-15-1-20.html">Genesis 15 1 20</a></li>
+													<li class="list-group-item"><a href="/german-shepherd-watch-dogs.html">German Shepherd Watch Dogs</a></li>
+													<li class="list-group-item"><a href="/genting-group-share-price.html">Genting Group Share Price</a></li>
+													<li class="list-group-item"><a href="/genting-dream-cruise-2019.html">Genting Dream Cruise 2019</a></li>
+													<li class="list-group-item"><a href="/geran-agropreneur-muda-2020.html">Geran Agropreneur Muda 2020</a></li>
+													<li class="list-group-item"><a href="/get-him-outta-here.html">Get Him Outta Here</a></li>
+													<li class="list-group-item"><a href="/geothermal-heat-pump-system.html">Geothermal Heat Pump System</a></li>
+													<li class="list-group-item"><a href="/geran-khas-prihatin-semakan.html">Geran Khas Prihatin Semakan</a></li>
+													<li class="list-group-item"><a href="/german-motors-sdn-bhd.html">German Motors Sdn Bhd</a></li>
+													<li class="list-group-item"><a href="/generations-from-exile-tribe.html">Generations From Exile Tribe</a></li>
+													<li class="list-group-item"><a href="/genting-highland-weather-forecast.html">Genting Highland Weather Forecast</a></li>
+													<li class="list-group-item"><a href="/get-set-to-go.html">Get Set To Go</a></li>
+													<li class="list-group-item"><a href="/gerhana-matahari-di-malaysia.html">Gerhana Matahari Di Malaysia</a></li>
+													<li class="list-group-item"><a href="/gerhana-matahari-penuh-2016.html">Gerhana Matahari Penuh 2016</a></li>
+													<li class="list-group-item"><a href="/geng-pagi-hot-fm.html">Geng Pagi Hot Fm</a></li>
+													<li class="list-group-item"><a href="/genius-aulad-fees-2020.html">Genius Aulad Fees 2020</a></li>
+													<li class="list-group-item"><a href="/george-carlin-golf-quote.html">George Carlin Golf Quote</a></li>
+						 
+						</ul>
+					</div>
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '4018db45540318875131c0e1da041568',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://plqbxvnjxq92.com/4018db45540318875131c0e1da041568/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+	
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	</body>
+</html>

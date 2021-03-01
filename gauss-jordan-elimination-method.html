@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}
+	</style>
+	<title>Gauss Jordan Elimination Method</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Blog"
+  },
+  "headline": "Gauss Jordan Elimination Method",
+  "datePublished": "2021-03-01",
+  "image": "https://semath.info/img/inverse_elimination_ex3_03.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog Wallpaper",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=gauss+jordan+elimination+method",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Blog Wallpaper" class="navbar-brand mb-1">Blog Wallpaper</a>
+			  			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+						<script type='text/javascript' src='//pl16106939.gatetotrustednetwork.com/c5/cc/4a/c5cc4aa1235b9046f17fa8c20b7c1115.js'></script>
+<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '14141033094306fdfffd4f6613bdfaee',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/14141033094306fdfffd4f6613bdfaee/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<h1>Gauss Jordan Elimination Method</h1>
+<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4e3d2f6a6fa732eb63e999eb159edcc5',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/4e3d2f6a6fa732eb63e999eb159edcc5/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4e3d2f6a6fa732eb63e999eb159edcc5',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/4e3d2f6a6fa732eb63e999eb159edcc5/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<div class="navi text-center">
+										<a class="badge badge-secondary" href="/fion-wong-sook-ling.html">fion wong sook ling</a>
+											<a class="badge badge-success" href="/fizz-fairuz-putus-tunang.html">fizz fairuz putus tunang</a>
+											<a class="badge badge-info" href="/fish-and-chips-scarborough.html">fish and chips scarborough</a>
+											<a class="badge badge-success" href="/fired-heaters-in-refineries.html">fired heaters in refineries</a>
+											<a class="badge badge-warning" href="/five-star-senior-living.html">five star senior living</a>
+											<a class="badge badge-dark" href="/finnish-baby-box-2019.html">finnish baby box 2019</a>
+											<a class="badge badge-info" href="/five-fingers-korean-drama.html">five fingers korean drama</a>
+											<a class="badge badge-info" href="/five-came-back-2017.html">five came back 2017</a>
+						</div>
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+	</center>
+</div>					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://www.mathwords.com/g/g_assets/g1.gif" data-lightbox="roadtrip" data-title="Mathwords Gauss Jordan Elimination">
+											<img class="card-img v-image" src="http://www.mathwords.com/g/g_assets/g1.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpKQZvU5qiMup0nwpFEqVJ9A4c4T6FMtxVVA';" alt="Mathwords Gauss Jordan Elimination">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Mathwords Gauss Jordan Elimination</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/eYSASx8_nyg/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Gauss Jordan Elimination Reduced Row Echelon Form Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/eYSASx8_nyg/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDTo5Hp9jCRJ6Wt54r0lz3YkaYhAfDqBXQfA';" alt="Gauss Jordan Elimination Reduced Row Echelon Form Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Gauss Jordan Elimination Reduced Row Echelon Form Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.cheggcdn.com/study/49a/49a8911f-b818-49ad-9d93-58d54abb8fc1/CL-2601V1.png" data-lightbox="roadtrip" data-title="Definition Of Gauss Jordan Elimination Method Chegg Com">
+											<img class="card-img v-image" src="https://media.cheggcdn.com/study/49a/49a8911f-b818-49ad-9d93-58d54abb8fc1/CL-2601V1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjuiu0NMFxd0mXo5XOafHkZgtBlaQRiDRXog';" alt="Definition Of Gauss Jordan Elimination Method Chegg Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Definition Of Gauss Jordan Elimination Method Chegg Com</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://camo.githubusercontent.com/91a6d1cf405d6a3a67049d38ad8de8da3c7c6fff133feef2c8c583a81f211fe9/68747470733a2f2f7777772e636f646577697468632e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031352f30352f6e756d65726963616c2d6578616d706c652d6f662d47617573732d4a6f7264616e2d4d6574686f642e706e67" data-lightbox="roadtrip" data-title="Vanita Dimentico Cater Matrix Gauss Jordan Valigia Esiliare Compagnia">
+											<img class="card-img v-image" src="https://camo.githubusercontent.com/91a6d1cf405d6a3a67049d38ad8de8da3c7c6fff133feef2c8c583a81f211fe9/68747470733a2f2f7777772e636f646577697468632e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031352f30352f6e756d65726963616c2d6578616d706c652d6f662d47617573732d4a6f7264616e2d4d6574686f642e706e67" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWfKiNMOToN-E4g5CQBpiVIVmvH9mfuyq3aQ';" alt="Vanita Dimentico Cater Matrix Gauss Jordan Valigia Esiliare Compagnia">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Vanita Dimentico Cater Matrix Gauss Jordan Valigia Esiliare Compagnia</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.geogebra.org/resource/ZXCkEEC6/w1FNg6RnUVBb3a1R/material-ZXCkEEC6.png" data-lightbox="roadtrip" data-title="Gauss Jordan 2x2 Elimination Geogebra">
+											<img class="card-img v-image" src="https://www.geogebra.org/resource/ZXCkEEC6/w1FNg6RnUVBb3a1R/material-ZXCkEEC6.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnLEqXuf9xh8ogBVze9cgOMTLd2LHNO7Vh2A';" alt="Gauss Jordan 2x2 Elimination Geogebra">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Gauss Jordan 2x2 Elimination Geogebra</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d3i71xaburhd42.cloudfront.net/54ce6e594da2ec87466d2828be45ce58fd4c3798/4-Figure4-1.png" data-lightbox="roadtrip" data-title="Pdf An Alternative Method To Gauss Jordan Elimination Minimizing Fraction Arithmetic Semantic Scholar">
+											<img class="card-img v-image" src="https://d3i71xaburhd42.cloudfront.net/54ce6e594da2ec87466d2828be45ce58fd4c3798/4-Figure4-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--RxTA9fGDW21jITCnmAQf77aFyUMkY9N8A';" alt="Pdf An Alternative Method To Gauss Jordan Elimination Minimizing Fraction Arithmetic Semantic Scholar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Pdf An Alternative Method To Gauss Jordan Elimination Minimizing Fraction Arithmetic Semantic Scholar</h3>
+				</div>
+			</div>
+		</div>
+			 
+					<div class="col-12 mb-4">
+				<div class="card">
+										<img class="card-img-top v-cover" src="https://mmiranda96blog.files.wordpress.com/2017/03/10.gif?w=371" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--RxTA9fGDW21jITCnmAQf77aFyUMkY9N8A';" alt="Pdf An Alternative Method To Gauss Jordan Elimination Minimizing Fraction Arithmetic Semantic Scholar">
+										<div class="card-body">
+						<h3 class="h5"><b></b></h3>
+											</div> 
+				</div>
+			</div>
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.ytimg.com/vi/UhhfKXBnnEo/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Algebra 55 Gauss Jordan Elimination Youtube">
+											<img class="card-img v-image" src="https://i.ytimg.com/vi/UhhfKXBnnEo/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvAOaAEIPoah5ZNWBkikAeMSXgO7k_Zv4SWw';" alt="Algebra 55 Gauss Jordan Elimination Youtube">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Algebra 55 Gauss Jordan Elimination Youtube</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://numericalmethodsece101.weebly.com/uploads/2/7/1/6/27160365/1873425_orig.jpg" data-lightbox="roadtrip" data-title="Gauss Jordan Elimination Method Numerical Methods">
+											<img class="card-img v-image" src="http://numericalmethodsece101.weebly.com/uploads/2/7/1/6/27160365/1873425_orig.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW896VdPSK32uqe6mJ3nw98vCceX2cnlReYQ';" alt="Gauss Jordan Elimination Method Numerical Methods">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Gauss Jordan Elimination Method Numerical Methods</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mmiranda96blog.files.wordpress.com/2017/03/10.gif?w=371" data-lightbox="roadtrip" data-title="Gauss Jordan Building Software">
+											<img class="card-img v-image" src="https://mmiranda96blog.files.wordpress.com/2017/03/10.gif?w=371" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSAoW-9U1NN3B26FbboG-skLqKxEs8Qk0brg';" alt="Gauss Jordan Building Software">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Gauss Jordan Building Software</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://image.slidesharecdn.com/gausseliminationgaussjordanmethodppt-170319070213/95/gauss-elimination-gauss-jordan-method-12-638.jpg?cb=1489907058" data-lightbox="roadtrip" data-title="Gauss Elimination Gauss Jordan Method">
+											<img class="card-img v-image" src="https://image.slidesharecdn.com/gausseliminationgaussjordanmethodppt-170319070213/95/gauss-elimination-gauss-jordan-method-12-638.jpg?cb=1489907058" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJVNBHquwjNmXsUJbW8Qtfvsd5GLp2vDc7Og';" alt="Gauss Elimination Gauss Jordan Method">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Gauss Elimination Gauss Jordan Method</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://i.stack.imgur.com/52Ono.png" data-lightbox="roadtrip" data-title="Gauss Jordan Elimination Reduces To Row Echelon Form Always Mathematics Stack Exchange">
+											<img class="card-img v-image" src="https://i.stack.imgur.com/52Ono.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK6dX1E94iw6uYoSZH6CA8UwBA2vK04M-mjA';" alt="Gauss Jordan Elimination Reduces To Row Echelon Form Always Mathematics Stack Exchange">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Gauss Jordan Elimination Reduces To Row Echelon Form Always Mathematics Stack Exchange</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://semath.info/img/inverse_elimination_ex3_03.jpg" data-lightbox="roadtrip" data-title="A Simple Example Of Inverting A 3x3 Matrix Using Gauss Jordan Elimination Semath Info">
+											<img class="card-img v-image" src="https://semath.info/img/inverse_elimination_ex3_03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2pafb-r8nvvXzbp0LI4DVQpJRQIKTzv9rQ';" alt="A Simple Example Of Inverting A 3x3 Matrix Using Gauss Jordan Elimination Semath Info">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">A Simple Example Of Inverting A 3x3 Matrix Using Gauss Jordan Elimination Semath Info</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://static.javatpoint.com/tutorial/matlab/images/matlab-gauss-and-gauss-jordan-elimination25.png" data-lightbox="roadtrip" data-title="Matlab Gauss And Gauss Jordan Elimination Javatpoint">
+											<img class="card-img v-image" src="https://static.javatpoint.com/tutorial/matlab/images/matlab-gauss-and-gauss-jordan-elimination25.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTR4qGfU5Y3TQEduT-kbEKmFGlZ-z684NtVg';" alt="Matlab Gauss And Gauss Jordan Elimination Javatpoint">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Matlab Gauss And Gauss Jordan Elimination Javatpoint</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="http://3.bp.blogspot.com/_PE0fz596ZCY/TEaAyQpZKMI/AAAAAAAAACQ/DR_Exd732fg/s1600/Imagen5.png" data-lightbox="roadtrip" data-title="Numerical Methods For Engineering Gauss Jordan Elimination">
+											<img class="card-img v-image" src="http://3.bp.blogspot.com/_PE0fz596ZCY/TEaAyQpZKMI/AAAAAAAAACQ/DR_Exd732fg/s1600/Imagen5.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSocI-jQMdlD6LkndvXh2N9BEfMfeyS1oCSZQ';" alt="Numerical Methods For Engineering Gauss Jordan Elimination">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Numerical Methods For Engineering Gauss Jordan Elimination</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://algebra.nipissingu.ca/tutorials/sysgifs/sys_free1.gif" data-lightbox="roadtrip" data-title="Stecaj Optimisticna Nastaviti Gauss Jordan Solver Tedxdharavi Com">
+											<img class="card-img v-image" src="https://algebra.nipissingu.ca/tutorials/sysgifs/sys_free1.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkU56vzPvX4QLVICiuO64aEiun9pxmfzhbXA';" alt="Stecaj Optimisticna Nastaviti Gauss Jordan Solver Tedxdharavi Com">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Stecaj Optimisticna Nastaviti Gauss Jordan Solver Tedxdharavi Com</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://community.ptc.com/sejnu66972/attachments/sejnu66972/PTCMathcad/186371/1/Gauss-Jordan_inverse_Matrix.jpg" data-lightbox="roadtrip" data-title="Solved Gauss Jordan Elimination Method For Inverse Matrix Ptc Community">
+											<img class="card-img v-image" src="https://community.ptc.com/sejnu66972/attachments/sejnu66972/PTCMathcad/186371/1/Gauss-Jordan_inverse_Matrix.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzUoK2Xnrx5WgoSu9PWLgNfQnq5SS2tW5UdA';" alt="Solved Gauss Jordan Elimination Method For Inverse Matrix Ptc Community">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Solved Gauss Jordan Elimination Method For Inverse Matrix Ptc Community</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sites.google.com/site/mmpc08cproj/_/rsrc/1468873803217/add-a-gallery/b.png" data-lightbox="roadtrip" data-title="Gauss Jordan Elimination Mathematical Modeling And Simulation Theory">
+											<img class="card-img v-image" src="https://sites.google.com/site/mmpc08cproj/_/rsrc/1468873803217/add-a-gallery/b.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIBdJd-spOQ_9xsN6OeUFxBigbrUg2sN0OPQ';" alt="Gauss Jordan Elimination Mathematical Modeling And Simulation Theory">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Gauss Jordan Elimination Mathematical Modeling And Simulation Theory</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://mathonweb.com/math4tech/gauss.jpg" data-lightbox="roadtrip" data-title="Mathonweb Gauss Elimination">
+											<img class="card-img v-image" src="https://mathonweb.com/math4tech/gauss.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK6RdrAVgDvZxvoTsPIex_NRXwnxBkEvx45w';" alt="Mathonweb Gauss Elimination">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Mathonweb Gauss Elimination</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://1.bp.blogspot.com/-IHB9JsZ8kzQ/WUzMQhgJIAI/AAAAAAAABYA/6wbMDeztbI0dr3IFXY5RKF3k5wk56yC8gCLcBGAs/s1600/gauss-jordan%2Bsolution.PNG" data-lightbox="roadtrip" data-title="Solving System Of Linear Equations By Gauss Jordan Elimination">
+											<img class="card-img v-image" src="https://1.bp.blogspot.com/-IHB9JsZ8kzQ/WUzMQhgJIAI/AAAAAAAABYA/6wbMDeztbI0dr3IFXY5RKF3k5wk56yC8gCLcBGAs/s1600/gauss-jordan%2Bsolution.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7tSJf9voC4uApfRB5DlEWyximDkQRTGE32w';" alt="Solving System Of Linear Equations By Gauss Jordan Elimination">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Solving System Of Linear Equations By Gauss Jordan Elimination</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d3i71xaburhd42.cloudfront.net/54ce6e594da2ec87466d2828be45ce58fd4c3798/4-Figure3-1.png" data-lightbox="roadtrip" data-title="Pdf An Alternative Method To Gauss Jordan Elimination Minimizing Fraction Arithmetic Semantic Scholar">
+											<img class="card-img v-image" src="https://d3i71xaburhd42.cloudfront.net/54ce6e594da2ec87466d2828be45ce58fd4c3798/4-Figure3-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjOCHG5A9BRH-03FjHmVmqca_eSExTcb4Qig';" alt="Pdf An Alternative Method To Gauss Jordan Elimination Minimizing Fraction Arithmetic Semantic Scholar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Pdf An Alternative Method To Gauss Jordan Elimination Minimizing Fraction Arithmetic Semantic Scholar</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+		</div>
+				<div class="clearfix"></div> 
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/harga-kereta-axia-baru.html">Harga Kereta Axia Baru</a></li>
+													<li class="list-group-item"><a href="/harga-jongkong-emas-1kg.html">Harga Jongkong Emas 1kg</a></li>
+													<li class="list-group-item"><a href="/harga-kucing-british-shorthair.html">Harga Kucing British Shorthair</a></li>
+													<li class="list-group-item"><a href="/harga-iphone-11-original.html">Harga Iphone 11 Original</a></li>
+													<li class="list-group-item"><a href="/harga-kereta-proton-saga.html">Harga Kereta Proton Saga</a></li>
+													<li class="list-group-item"><a href="/harga-kenaf-di-malaysia.html">Harga Kenaf Di Malaysia</a></li>
+													<li class="list-group-item"><a href="/harga-iphone-7-celcom.html">Harga Iphone 7 Celcom</a></li>
+													<li class="list-group-item"><a href="/harga-ikan-haruan-tasik.html">Harga Ikan Haruan Tasik</a></li>
+													<li class="list-group-item"><a href="/harga-kereta-proton-2019.html">Harga Kereta Proton 2019</a></li>
+													<li class="list-group-item"><a href="/harga-kacang-tanah-sekilo.html">Harga Kacang Tanah Sekilo</a></li>
+													<li class="list-group-item"><a href="/harga-kereta-di-malaysia.html">Harga Kereta Di Malaysia</a></li>
+													<li class="list-group-item"><a href="/harga-ikan-baung-sekilo.html">Harga Ikan Baung Sekilo</a></li>
+													<li class="list-group-item"><a href="/harga-ikan-ketutu-2019.html">Harga Ikan Ketutu 2019</a></li>
+													<li class="list-group-item"><a href="/harga-kereta-di-indonesia.html">Harga Kereta Di Indonesia</a></li>
+													<li class="list-group-item"><a href="/harga-kereta-perodua-2020.html">Harga Kereta Perodua 2020</a></li>
+													<li class="list-group-item"><a href="/harga-kia-picanto-malaysia.html">Harga Kia Picanto Malaysia</a></li>
+													<li class="list-group-item"><a href="/harga-kereta-perodua-terkini.html">Harga Kereta Perodua Terkini</a></li>
+													<li class="list-group-item"><a href="/harga-kereta-axia-2020.html">Harga Kereta Axia 2020</a></li>
+													<li class="list-group-item"><a href="/harga-kereta-ford-ranger.html">Harga Kereta Ford Ranger</a></li>
+													<li class="list-group-item"><a href="/harga-kereta-proton-x50.html">Harga Kereta Proton X50</a></li>
+						 
+						</ul>
+					</div>
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '4018db45540318875131c0e1da041568',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://plqbxvnjxq92.com/4018db45540318875131c0e1da041568/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+	
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	</body>
+</html>

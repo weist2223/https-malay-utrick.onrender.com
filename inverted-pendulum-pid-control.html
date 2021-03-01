@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
+	<style type="text/css">
+body,html{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;background:#fff}img{max-width:100%}.header{padding-bottom:13px;margin-bottom:13px}.container{max-width:1024px}.navbar{margin-bottom:25px;color:#f1f2f3;border-bottom:1px solid #e1e2e3}.navbar .navbar-brand{margin:0 20px 0 0;font-size:28px;padding:0;line-height:24px}.row.content,.row.footer,.row.header{widthx:auto;max-widthx:100%}.row.footer{padding:30px 0;background:0 0}.content .col-sm-12{padding:0}.content .col-md-9s{margin-right:-25px}.posts-image{width:25%;display:block;float:left}.posts-image-content{width:auto;margin:0 15px 35px 0;position:relative}.posts-image:nth-child(5n) .posts-image-content{margin:0 0 35px!important}.posts-image img{width:100%;height:150px;object-fit:cover;object-position:center;margin-bottom:10px;-webkit-transition:.6s opacity;transition:.6s opacity}.posts-image:hover img{opacity:.8}.posts-image:hover h2{background:rgba(0,0,0,.7)}.posts-image h2{z-index:2;position:absolute;font-size:14px;bottom:2px;left:0;right:0;padding:5px;text-align:center;-webkit-transition:.6s opacity;transition:.6s background}.posts-image h2 a{color:#fff}.posts-image-big{display:block;width:100%}.posts-image-big .posts-image-content{margin:0 0 10px!important}.posts-image-big img{height:380px}.posts-image-big h2{text-align:left;padding-left:0;position:relative;font-size:30px;line-height:36px}.posts-image-big h2 a{color:#111}.posts-image-big:hover h2{background:0 0}.posts-image-single .posts-image-content,.posts-image-single:nth-child(5n) .posts-image-content{margin:0 15px 15px 0!important}.posts-image-single p{font-size:12px;line-height:18px!important}.posts-images{clear:both}.list-group li{padding:0}.list-group li a{display:block;padding:8px}.widget{margin-bottom:20px}h3.widget-title{font-size:20px}a{color:#f42966;text-decoration:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0}.navi a{margin:5px 2px;font-size:95%}@media  only screen and (min-width:0px) and (max-width:991px){.container{width:auto;max-width:100%}.navbar{padding:5px 0}.navbar .container{width:100%;margin:0 15px}}@media  only screen and (min-width:0px) and (max-width:767px){.content .col-md-3{padding:15px}}@media  only screen and (min-width:481px) and (max-width:640px){.posts-image img{height:90px}.posts-image-big img{height:320px}.posts-image-single{width:33.3%}.posts-image-single:nth-child(3n) .posts-image-content{margin-right:0!important}}@media  only screen and (min-width:0px) and (max-width:480px){.posts-image img{height:80px}.posts-image-big img{height:240px}.posts-image-single{width:100%}.posts-image-single .posts-image-content{margin:0!important}.posts-image-single img{height:auto}}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}
+	</style>
+	<title>Inverted Pendulum Pid Control</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Blog"
+  },
+  "headline": "Inverted Pendulum Pid Control",
+  "datePublished": "2021-03-01",
+  "image": "https://ars.els-cdn.com/content/image/1-s2.0-S1569190X10001796-gr4.jpg",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog Wallpaper",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=inverted+pendulum+pid+control",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code --></head>
+<body>
+	<header class="bg-white fixed-top">			
+		<nav class="navbar navbar-light bg-white mb-0">
+			<div class="container justify-content-center justify-content-sm-between">	
+			  <a href="/" title="Blog Wallpaper" class="navbar-brand mb-1">Blog Wallpaper</a>
+			  			</div>			  
+		</nav>				
+	</header>
+	<main id="main" class="main">
+		<div class="container">  
+			<div class="row content">
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- TOP BANNER ADS -->
+	</center>
+</div>				</div>
+				<div class="col-md-9">
+					<div class="col-sm-12 p-2">
+						<script type='text/javascript' src='//pl16106939.gatetotrustednetwork.com/c5/cc/4a/c5cc4aa1235b9046f17fa8c20b7c1115.js'></script>
+<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '14141033094306fdfffd4f6613bdfaee',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/14141033094306fdfffd4f6613bdfaee/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<h1>Inverted Pendulum Pid Control</h1>
+<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4e3d2f6a6fa732eb63e999eb159edcc5',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/4e3d2f6a6fa732eb63e999eb159edcc5/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '4e3d2f6a6fa732eb63e999eb159edcc5',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkcontent.com/4e3d2f6a6fa732eb63e999eb159edcc5/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+	<div class="navi text-center">
+										<a class="badge badge-primary" href="/fire-emblem-tactics-primer.html">fire emblem tactics primer</a>
+											<a class="badge badge-warning" href="/fj-cruiser-engine-oil.html">fj cruiser engine oil</a>
+											<a class="badge badge-light" href="/fish-pictures-to-color.html">fish pictures to color</a>
+											<a class="badge badge-danger" href="/fire-emblem-echoes-3ds.html">fire emblem echoes 3ds</a>
+											<a class="badge badge-dark" href="/first-harry-potter-book.html">first harry potter book</a>
+											<a class="badge badge-light" href="/firman-allah-tentang-sabar.html">firman allah tentang sabar</a>
+											<a class="badge badge-danger" href="/five-fingers-for-marseilles.html">five fingers for marseilles</a>
+											<a class="badge badge-info" href="/fixtures-and-fittings-accounting.html">fixtures and fittings accounting</a>
+						</div>
+	<div class="d-block p-4">
+	<center>
+		<!-- IN ARTICLE ADS -->
+	</center>
+</div>					</div> 
+					<div class="col-sm-12">					
+						
+		
+	<div class="row">
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/Control/PID/figures/feedback_pend.png" data-lightbox="roadtrip" data-title="Control Tutorials For Matlab And Simulink Inverted Pendulum Pid Controller Design">
+											<img class="card-img v-image" src="https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/Control/PID/figures/feedback_pend.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUcVOGuBSjo7eZ61V8qxCrniZ29bZI3SR83A';" alt="Control Tutorials For Matlab And Simulink Inverted Pendulum Pid Controller Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Control Tutorials For Matlab And Simulink Inverted Pendulum Pid Controller Design</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ars.els-cdn.com/content/image/1-s2.0-S1569190X10001796-gr2.jpg" data-lightbox="roadtrip" data-title="Simulation Studies Of Inverted Pendulum Based On Pid Controllers Sciencedirect">
+											<img class="card-img v-image" src="https://ars.els-cdn.com/content/image/1-s2.0-S1569190X10001796-gr2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhltpyKlNHUI4k_7VdcwLYgSOc1Ss6x49cJw';" alt="Simulation Studies Of Inverted Pendulum Based On Pid Controllers Sciencedirect">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Simulation Studies Of Inverted Pendulum Based On Pid Controllers Sciencedirect</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/Control/PID/figures/feedback_pend3.png" data-lightbox="roadtrip" data-title="Control Tutorials For Matlab And Simulink Inverted Pendulum Pid Controller Design">
+											<img class="card-img v-image" src="https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/Control/PID/figures/feedback_pend3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9C_UaxkXvgZTm1tguHOaQmGMbp7PpRiL0bA';" alt="Control Tutorials For Matlab And Simulink Inverted Pendulum Pid Controller Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Control Tutorials For Matlab And Simulink Inverted Pendulum Pid Controller Design</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="oDtcrIoYg_P0fM" data-lightbox="roadtrip" data-title="Https Iopscience Iop Org Article 10 1088 1757 899x 263 5 052007 Pdf">
+											<img class="card-img v-image" src="oDtcrIoYg_P0fM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMADdGEkfny5KFtqNtVCn5nupH6TjJ9xgGgQ';" alt="Https Iopscience Iop Org Article 10 1088 1757 899x 263 5 052007 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Https Iopscience Iop Org Article 10 1088 1757 899x 263 5 052007 Pdf</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ars.els-cdn.com/content/image/1-s2.0-S1569190X10001796-gr8.jpg" data-lightbox="roadtrip" data-title="Simulation Studies Of Inverted Pendulum Based On Pid Controllers Sciencedirect">
+											<img class="card-img v-image" src="https://ars.els-cdn.com/content/image/1-s2.0-S1569190X10001796-gr8.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-66vrM9TSpK50mFSZXzCVi2EZoDVInDzDRQ';" alt="Simulation Studies Of Inverted Pendulum Based On Pid Controllers Sciencedirect">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Simulation Studies Of Inverted Pendulum Based On Pid Controllers Sciencedirect</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/Simulink/Control/figures/pendclosedloop.png" data-lightbox="roadtrip" data-title="Control Tutorials For Matlab And Simulink Inverted Pendulum Simulink Control">
+											<img class="card-img v-image" src="https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/Simulink/Control/figures/pendclosedloop.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQooHJTTOtiJEFwEO1PN47dFtrJdyKwq32vrw';" alt="Control Tutorials For Matlab And Simulink Inverted Pendulum Simulink Control">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Control Tutorials For Matlab And Simulink Inverted Pendulum Simulink Control</h3>
+				</div>
+			</div>
+		</div>
+			 
+					<div class="col-12 mb-4">
+				<div class="card">
+										<img class="card-img-top v-cover" src="7WTDOkpbUTQ0MM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQooHJTTOtiJEFwEO1PN47dFtrJdyKwq32vrw';" alt="Control Tutorials For Matlab And Simulink Inverted Pendulum Simulink Control">
+										<div class="card-body">
+						<h3 class="h5"><b></b></h3>
+											</div> 
+				</div>
+			</div>
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.researchgate.net/publication/335176468/figure/fig1/AS:792139340455938@1565872144356/Postural-control-model-an-inverted-pendulum-as-Body-with-PID-controller-representing.png" data-lightbox="roadtrip" data-title="Postural Control Model An Inverted Pendulum As Body With Pid Download Scientific Diagram">
+											<img class="card-img v-image" src="https://www.researchgate.net/publication/335176468/figure/fig1/AS:792139340455938@1565872144356/Postural-control-model-an-inverted-pendulum-as-Body-with-PID-controller-representing.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfm79x9aZWKSWs2xGfyIE2IQGXdNHrj6vFjQ';" alt="Postural Control Model An Inverted Pendulum As Body With Pid Download Scientific Diagram">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Postural Control Model An Inverted Pendulum As Body With Pid Download Scientific Diagram</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/Control/PID/html/InvertedPendulum_ControlPID_02.png" data-lightbox="roadtrip" data-title="Control Tutorials For Matlab And Simulink Inverted Pendulum Pid Controller Design">
+											<img class="card-img v-image" src="https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/Control/PID/html/InvertedPendulum_ControlPID_02.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT93otBI8XJSQa4SOKJwKJWU2GSa_w8TuNJSw';" alt="Control Tutorials For Matlab And Simulink Inverted Pendulum Pid Controller Design">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Control Tutorials For Matlab And Simulink Inverted Pendulum Pid Controller Design</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.mathworks.com/help/examples/control/win64/xxpendulum2.png" data-lightbox="roadtrip" data-title="Control Of An Inverted Pendulum On A Cart Matlab Simulink Example">
+											<img class="card-img v-image" src="https://www.mathworks.com/help/examples/control/win64/xxpendulum2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAl4WEBnWhcowAEvsroQRLzXt60BlMpwiEPg';" alt="Control Of An Inverted Pendulum On A Cart Matlab Simulink Example">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Control Of An Inverted Pendulum On A Cart Matlab Simulink Example</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-981-10-2525-9_11/MediaObjects/371594_1_En_11_Fig2_HTML.gif" data-lightbox="roadtrip" data-title="Design Of Two Loop Pid Controller For Inverted Cart Pendulum System Using Modified Genetic Algorithm Springerlink">
+											<img class="card-img v-image" src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-981-10-2525-9_11/MediaObjects/371594_1_En_11_Fig2_HTML.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8DrT5mkr2PL-ZDaJAnCw4yiTXt84YAmwu1Q';" alt="Design Of Two Loop Pid Controller For Inverted Cart Pendulum System Using Modified Genetic Algorithm Springerlink">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Design Of Two Loop Pid Controller For Inverted Cart Pendulum System Using Modified Genetic Algorithm Springerlink</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="7WTDOkpbUTQ0MM" data-lightbox="roadtrip" data-title="Https Www Matec Conferences Org Articles Matecconf Pdf 2018 11 Matecconf Eureca2018 02009 Pdf">
+											<img class="card-img v-image" src="7WTDOkpbUTQ0MM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeT0aHb6_QlVmjWmPV2oYaQNgWxWH01BhErw';" alt="Https Www Matec Conferences Org Articles Matecconf Pdf 2018 11 Matecconf Eureca2018 02009 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Https Www Matec Conferences Org Articles Matecconf Pdf 2018 11 Matecconf Eureca2018 02009 Pdf</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d3i71xaburhd42.cloudfront.net/47ad10265e431ed499c3e54d7b4258f8174ae576/3-Figure2-1.png" data-lightbox="roadtrip" data-title="Figure 2 From Design Of Pid Controller For Inverted Pendulum Using Stability Boundary Locus Semantic Scholar">
+											<img class="card-img v-image" src="https://d3i71xaburhd42.cloudfront.net/47ad10265e431ed499c3e54d7b4258f8174ae576/3-Figure2-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdeXfiMEJCYDq5nvPZJI7IGtaPAMwV3pUPkg';" alt="Figure 2 From Design Of Pid Controller For Inverted Pendulum Using Stability Boundary Locus Semantic Scholar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Figure 2 From Design Of Pid Controller For Inverted Pendulum Using Stability Boundary Locus Semantic Scholar</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="sTlj4EtUgOQYaM" data-lightbox="roadtrip" data-title="Https Dl Acm Org Doi Pdf 10 1145 3029610 3029643">
+											<img class="card-img v-image" src="sTlj4EtUgOQYaM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPL0wbZZJZepM2_Q0EQGRhOYxSsa9fSbQYEA';" alt="Https Dl Acm Org Doi Pdf 10 1145 3029610 3029643">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Https Dl Acm Org Doi Pdf 10 1145 3029610 3029643</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://www.researchgate.net/profile/Thirunavukkarasu_Indiran2/publication/281572188/figure/fig2/AS:284594256531484@1444863966943/Block-Diagram-of-Triple-PID-controller-for-parallel-Rotary-Double-Inverted-Pendulum.png" data-lightbox="roadtrip" data-title="Block Diagram Of Triple Pid Controller For Parallel Rotary Double Download Scientific Diagram">
+											<img class="card-img v-image" src="https://www.researchgate.net/profile/Thirunavukkarasu_Indiran2/publication/281572188/figure/fig2/AS:284594256531484@1444863966943/Block-Diagram-of-Triple-PID-controller-for-parallel-Rotary-Double-Inverted-Pendulum.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7H75PpVtr5cd8A_QcN8E4AdMP3cayGlvb_w';" alt="Block Diagram Of Triple Pid Controller For Parallel Rotary Double Download Scientific Diagram">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Block Diagram Of Triple Pid Controller For Parallel Rotary Double Download Scientific Diagram</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://d3i71xaburhd42.cloudfront.net/16476bb50442ffd13c44baa8b2d9a40a9a446ed9/2-Figure2-1.png" data-lightbox="roadtrip" data-title="Figure 2 From Review Linear Nonlinear And Intelligent Controllers For The Inverted Pendulum Problem Semantic Scholar">
+											<img class="card-img v-image" src="https://d3i71xaburhd42.cloudfront.net/16476bb50442ffd13c44baa8b2d9a40a9a446ed9/2-Figure2-1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmqn7PUpOMFH3BOAo3gu03pLVCU07XUWo54g';" alt="Figure 2 From Review Linear Nonlinear And Intelligent Controllers For The Inverted Pendulum Problem Semantic Scholar">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Figure 2 From Review Linear Nonlinear And Intelligent Controllers For The Inverted Pendulum Problem Semantic Scholar</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://sites.google.com/site/bestshenasia/_/rsrc/1467888149655/control-sys/final-project---pid-controller/pid-with-inverted-pendulum/%E6%93%BA%E9%8C%98.PNG" data-lightbox="roadtrip" data-title="Pid With Inverted Pendulum Ilovegodiva">
+											<img class="card-img v-image" src="https://sites.google.com/site/bestshenasia/_/rsrc/1467888149655/control-sys/final-project---pid-controller/pid-with-inverted-pendulum/%E6%93%BA%E9%8C%98.PNG" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLIKh6xyRbGii05mnqCHZq71CBPVkre_6_g';" alt="Pid With Inverted Pendulum Ilovegodiva">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Pid With Inverted Pendulum Ilovegodiva</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="oDtcrIoYg_P0fM" data-lightbox="roadtrip" data-title="Https Iopscience Iop Org Article 10 1088 1757 899x 263 5 052007 Pdf">
+											<img class="card-img v-image" src="oDtcrIoYg_P0fM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2YVgKS4vXCAb27E3RumVzCpHmdZcA26ra5g';" alt="Https Iopscience Iop Org Article 10 1088 1757 899x 263 5 052007 Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Https Iopscience Iop Org Article 10 1088 1757 899x 263 5 052007 Pdf</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ars.els-cdn.com/content/image/1-s2.0-S1569190X10001796-gr4.jpg" data-lightbox="roadtrip" data-title="Simulation Studies Of Inverted Pendulum Based On Pid Controllers Sciencedirect">
+											<img class="card-img v-image" src="https://ars.els-cdn.com/content/image/1-s2.0-S1569190X10001796-gr4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScthZ0zg1GwkX-HBE0FUy2hnrLCx2PyilyVA';" alt="Simulation Studies Of Inverted Pendulum Based On Pid Controllers Sciencedirect">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Simulation Studies Of Inverted Pendulum Based On Pid Controllers Sciencedirect</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/Simulink/Control/figures/pendulum.png" data-lightbox="roadtrip" data-title="Control Tutorials For Matlab And Simulink Inverted Pendulum Simulink Control">
+											<img class="card-img v-image" src="https://ctms.engin.umich.edu/CTMS/Content/InvertedPendulum/Simulink/Control/figures/pendulum.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRavwyfCbwdryq6AaAwvMArL6Idgf_0XSdKDg';" alt="Control Tutorials For Matlab And Simulink Inverted Pendulum Simulink Control">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Control Tutorials For Matlab And Simulink Inverted Pendulum Simulink Control</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+	 
+			
+		<div class="col-md-4 mb-4">
+			<div class="card h-100">
+				<a href="tRIIe2-WZ9K0LM" data-lightbox="roadtrip" data-title="Https Www Ijirset Com Upload 2018 April 49 Pd Pid 20control Pdf">
+											<img class="card-img v-image" src="tRIIe2-WZ9K0LM" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Uw6pUhcFJdyN1HL2p-jfLLN4gJ2Hf3PAkg';" alt="Https Www Ijirset Com Upload 2018 April 49 Pd Pid 20control Pdf">
+										
+				</a>
+				<div class="card-body text-center">      
+										<h3 class="h6">Https Www Ijirset Com Upload 2018 April 49 Pd Pid 20control Pdf</h3>
+				</div>
+			</div>
+		</div>
+			 
+		 
+
+		</div>
+				<div class="clearfix"></div> 
+		<div class="d-block mt-4 p-3">
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+						</div>
+				</div> 
+				<div class="col-md-3">
+					<div class="col-sm-12 widget">
+						<h3 class="widget-title">Random Posts</h3>
+						<ul class="list-group">
+													<li class="list-group-item"><a href="/harga-cermin-sisi-kereta.html">Harga Cermin Sisi Kereta</a></li>
+													<li class="list-group-item"><a href="/harga-copper-sekilo-2018.html">Harga Copper Sekilo 2018</a></li>
+													<li class="list-group-item"><a href="/harga-biskut-florentine-2019.html">Harga Biskut Florentine 2019</a></li>
+													<li class="list-group-item"><a href="/harga-bezza-full-loan.html">Harga Bezza Full Loan</a></li>
+													<li class="list-group-item"><a href="/harga-cincin-emas-coco.html">Harga Cincin Emas Coco</a></li>
+													<li class="list-group-item"><a href="/harga-cukai-jalan-malaysia.html">Harga Cukai Jalan Malaysia</a></li>
+													<li class="list-group-item"><a href="/harga-emas-916-2020.html">Harga Emas 916 2020</a></li>
+													<li class="list-group-item"><a href="/harga-dekoder-dvb-t2.html">Harga Dekoder Dvb T2</a></li>
+													<li class="list-group-item"><a href="/harga-braces-klinik-kerajaan.html">Harga Braces Klinik Kerajaan</a></li>
+													<li class="list-group-item"><a href="/harga-buat-lesen-motor.html">Harga Buat Lesen Motor</a></li>
+													<li class="list-group-item"><a href="/harga-emas-916-habib.html">Harga Emas 916 Habib</a></li>
+													<li class="list-group-item"><a href="/harga-burung-serindit-malaysia.html">Harga Burung Serindit Malaysia</a></li>
+													<li class="list-group-item"><a href="/harga-durian-musang-king.html">Harga Durian Musang King</a></li>
+													<li class="list-group-item"><a href="/harga-bateri-kering-kereta.html">Harga Bateri Kering Kereta</a></li>
+													<li class="list-group-item"><a href="/harga-daging-kambing-frozen.html">Harga Daging Kambing Frozen</a></li>
+													<li class="list-group-item"><a href="/harga-burung-murai-batu.html">Harga Burung Murai Batu</a></li>
+													<li class="list-group-item"><a href="/harga-bulanan-myvi-baru.html">Harga Bulanan Myvi Baru</a></li>
+													<li class="list-group-item"><a href="/harga-durian-duri-hitam.html">Harga Durian Duri Hitam</a></li>
+													<li class="list-group-item"><a href="/harga-braces-kerajaan-2019.html">Harga Braces Kerajaan 2019</a></li>
+													<li class="list-group-item"><a href="/harga-duit-syiling-lama.html">Harga Duit Syiling Lama</a></li>
+						 
+						</ul>
+					</div>
+					<div class="col-sm-12 widget">
+						<div class="d-block p-4">
+	<center>
+		<script type="text/javascript">
+	atOptions = {
+		'key' : '4018db45540318875131c0e1da041568',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://plqbxvnjxq92.com/4018db45540318875131c0e1da041568/invoke.js"></scr' + 'ipt>');
+</script>
+	</center>
+</div>					</div>
+				</div> 
+				<div class="col-md-12 my-2" align="center">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+									</div>
+			</div>
+		</div>		
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<!-- Footer CSS JS -->	
+	
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"></script>
+	<script type='text/javascript'>
+		$(document).ready(function()
+	    {
+			$(document).on('click','#image-download',function(e)
+			{
+				e.preventDefault();
+				var url = $(this).data('url');
+				var title = $(this).data('title');			
+				var x=new XMLHttpRequest();
+				x.open( "GET", url , true);
+				x.responseType="blob";
+				x.onload= function(e){download(e.target.response, title, "image/jpg");};
+				x.send();
+			});
+	    });
+	</script>
+	</body>
+</html>
